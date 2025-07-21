@@ -5,8 +5,10 @@
   "scripts": {
     "build": "rspack build",
     "dev": "rspack dev",
-    "format": "prettier --write .",
-    "lint": "eslint .",
+    "format": "biome format  --write",
+    "lint": "biome lint .",
+    "fix": "biome check --fix",
+    "check": "biome check",
     "preview": "rspack preview"
   },
   "dependencies": {
@@ -15,26 +17,14 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.1.2",
-    "@eslint/js": "^9.30.0",
     "@rspack/cli": "^1.4.8",
     "@rspack/core": "^1.4.8",
     "@rspack/plugin-react-refresh": "^1.4.3",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
-    "@typescript-eslint/parser": "^8.37.0",
-    "eslint": "^9.30.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-airbnb-base-typescript": "^1.1.0",
-    "eslint-config-airbnb-typescript": "^18.0.0",
-    "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.2.0",
-    "prettier": "^3.6.2",
     "react-refresh": "^0.17.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.8.3",
-    "typescript-eslint": "^8.35.1"
+    "typescript": "^5.8.3"
   }
 }

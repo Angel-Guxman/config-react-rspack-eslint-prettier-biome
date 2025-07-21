@@ -111,9 +111,11 @@ export default tseslint.config([
 
 bunx biome init
 
-### correr la migracion de biome de eslint
+### correr la migracion de biome de eslint y prettier
 
 bunx biome migrate eslint
+bunx biome migrate prettier
+
 
 ### escribir la migracion
 
